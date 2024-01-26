@@ -1,4 +1,4 @@
-class stuff:
+class Stuff:
     def __init__(self, name, brand, model, buy_price, description):
         self.id = None
         self.name = name
