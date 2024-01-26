@@ -6,3 +6,6 @@ class Stuff:
         self.model = model
         self.description = description
         self.brand = brand
+
+    def __repr__(self):
+        return  str(self.__dict__)

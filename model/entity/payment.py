@@ -4,4 +4,6 @@ class Payment:
         self.amount = amount
         self.payment_type = payment_type
         self.payment_date_time = payment_date_time
+    def __repr__(self):
+        return  str(self.__dict__)
 
