@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df315236-a6b0-4d49-8d2b-dc56148002e0" name="Changes" comment=" update - alireza chahardaghi">
-      <change afterPath="$PROJECT_DIR$/model/da/stuff_da.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/da/transaction_da.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/da/database_manager.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/da/database_manager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/entity/payment.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/entity/payment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/entity/stuff.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/entity/stuff.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/entity/transaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/entity/transaction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/entity/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/entity/user.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706282197328</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary=" update - alireza chahardaghi">
+      <option name="closed" value="true" />
+      <created>1706283274108</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706283274108</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
