@@ -5,3 +5,6 @@ class Transaction:
         self.quantity = quantity
         self.date = date
         self.total_price = total_price
+
+    def __repr__(self):
+        return str(self.__dict__)
