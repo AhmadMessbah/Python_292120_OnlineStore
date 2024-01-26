@@ -1,0 +1,134 @@
+Index: model/entity/user.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>class User:\r\n    def __init__(self, name, family, username, password, role, status=True):\r\n        self.id = None\r\n        self.name = name\r\n        self.family = family\r\n        self.username = username\r\n        self.password = password\r\n        self.role = role\r\n        self.status = status\r\n\r\n    def __repr__(self):\r\n        return str(self.__dict__)\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/model/entity/user.py b/model/entity/user.py
+--- a/model/entity/user.py	(revision 7c810942855850c0110a2b1feab1dd2c1a71d918)
++++ b/model/entity/user.py	(date 1706272164873)
+@@ -5,7 +5,7 @@
+         self.family = family
+         self.username = username
+         self.password = password
+-        self.role = role
++        self.phone = phone
+         self.status = status
+ 
+     def __repr__(self):
+Index: model/entity/stuff.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/model/entity/stuff.py b/model/entity/stuff.py
+--- a/model/entity/stuff.py	(revision 7c810942855850c0110a2b1feab1dd2c1a71d918)
++++ b/model/entity/stuff.py	(date 1706274453953)
+@@ -1,0 +1,8 @@
++class Stuff:
++    def __init__(self, name, brand, model, buy_price, description):
++        self.id = None
++        self.name = name
++        self.buy_price = buy_price
++        self.model = model
++        self.description = description
++        self.brand = brand
+\ No newline at end of file
+Index: model/entity/payment.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/model/entity/payment.py b/model/entity/payment.py
+--- a/model/entity/payment.py	(revision 7c810942855850c0110a2b1feab1dd2c1a71d918)
++++ b/model/entity/payment.py	(date 1706274405987)
+@@ -1,0 +1,6 @@
++class Payment:
++    def __init__(self, amount, payment_type, payment_date_time):
++        self.id = None
++        self.amount = amount
++        self.payment_type = payment_type
++        self.payment_date_time = payment_date_time
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" project-jdk-name=\"Python 3.10\" project-jdk-type=\"Python SDK\" />\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	(revision 7c810942855850c0110a2b1feab1dd2c1a71d918)
++++ b/.idea/misc.xml	(date 1706272165518)
+@@ -1,4 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="Black">
++    <option name="sdkName" value="Python 3.10" />
++  </component>
+   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10" project-jdk-type="Python SDK" />
+ </project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"df315236-a6b0-4d49-8d2b-dc56148002e0\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"associatedIndex\": 1\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"2bUVJtewJ0dQRsBXOih6Q7JGaQj\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"df315236-a6b0-4d49-8d2b-dc56148002e0\" name=\"Changes\" comment=\"\" />\r\n      <created>1706269575233</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1706269575233</updated>\r\n      <workItem from=\"1706269576370\" duration=\"2000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 7c810942855850c0110a2b1feab1dd2c1a71d918)
++++ b/.idea/workspace.xml	(date 1706274372228)
+@@ -1,7 +1,15 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="SELECTIVE" />
++  </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="df315236-a6b0-4d49-8d2b-dc56148002e0" name="Changes" comment="" />
++    <list default="true" id="df315236-a6b0-4d49-8d2b-dc56148002e0" name="Changes" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/model/entity/transaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/entity/transaction.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/model/entity/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/entity/user.py" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -10,9 +18,12 @@
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "associatedIndex": 1
+-}]]></component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
++  </component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 1
++}</component>
+   <component name="ProjectId" id="2bUVJtewJ0dQRsBXOih6Q7JGaQj" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+@@ -23,6 +34,10 @@
+   "keyToString": {
+     "RunOnceActivity.OpenProjectViewOnStart": "true",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
+     "nodejs_package_manager_path": "npm",
+     "vue.rearranger.settings.migration": "true"
+   }
+@@ -43,6 +58,7 @@
+       <option name="presentableId" value="Default" />
+       <updated>1706269575233</updated>
+       <workItem from="1706269576370" duration="2000" />
++      <workItem from="1706271588276" duration="2781000" />
+     </task>
+     <servers />
+   </component>
