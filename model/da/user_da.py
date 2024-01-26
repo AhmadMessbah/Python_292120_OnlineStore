@@ -1,27 +1,15 @@
-class UserDa:
-    def connect(self):
-        pass
+from model.da.database_manager import *
+from model.entity.user import User
 
-    def disconnect(self):
-        pass
 
-    def save(self,user):
-        pass
-
-    def edit(self,user):
-        pass
-
-    def remove(self, id):
-        pass
-
-    def find_all(self):
-        pass
-
-    def find_by_id(self, id):
-        pass
+class UserDa(DatabaseManager):
 
     def find_by_username(self, username):
-        pass
+        self.make_engine()
+        entity = self.session.query(User).filter(User.username == username).all()
+        return entity.first()
 
     def find_by_username_and_password(self, username, password):
-        pass
+        self.make_engine()
+        entity = self.session.query(User).filter(and_( User.username == username, User.password == password)).all()
+        return entity.first()
