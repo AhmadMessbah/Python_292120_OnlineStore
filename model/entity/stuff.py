@@ -2,6 +2,7 @@ class stuff:
     def __init__(self, name, brand, model, buy_price, description):
         self.id = None
         self.name = name
-        self.price = price
-        self.quantity = quantity
+        self.buy_price = buy_price
+        self.model = model
         self.description = description
+        self.brand = brand
