@@ -9,7 +9,7 @@ class User(Base):
     family = Column(String(30))
     username = Column(String(30))
     password = Column(String(8))
-    phone = Column(String(11))
+    phone = Column(String(12))
     status = Column(Boolean)
 
 
