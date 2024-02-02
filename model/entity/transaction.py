@@ -5,6 +5,7 @@ from sqlalchemy.orm import relationship
 from model.entity.base import Base
 
 
+
 class Transaction(Base):
     __tablename__ = "transaction_tbl"
     id = Column(Integer, primary_key=True)
