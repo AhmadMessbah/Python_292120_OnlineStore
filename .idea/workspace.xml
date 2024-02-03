@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df315236-a6b0-4d49-8d2b-dc56148002e0" name="Changes" comment=" update - alireza chahardaghi">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a1fdda57-d631-4b12-a027-5c0440d2198c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a1fdda57-d631-4b12-a027-5c0440d2198c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_26_2024_4_40_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_26_2024_4_40_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_26_2024_6_28_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_1_26_2024_6_28_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/entity/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/entity/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/entity/transaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/entity/transaction.py" afterDir="false" />
+    <list default="true" id="df315236-a6b0-4d49-8d2b-dc56148002e0" name="Changes" comment=" update - Negin Saatsaz">
+      <change beforePath="$PROJECT_DIR$/model/entity/payment.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/entity/payment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/entity/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/entity/storage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/entity/stuff.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/entity/stuff.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +67,7 @@
     "Python.test.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/Student/Desktop/Python_292120_OnlineStore",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -107,6 +104,7 @@
       <updated>1706269575233</updated>
       <workItem from="1706269576370" duration="2000" />
       <workItem from="1706873118086" duration="5029000" />
+      <workItem from="1706989359355" duration="319000" />
     </task>
     <task id="LOCAL-00001" summary=" update - alireza chahardaghi">
       <option name="closed" value="true" />
@@ -132,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706283274108</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=" update - Negin Saatsaz">
+      <option name="closed" value="true" />
+      <created>1706989450899</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706989450899</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,7 +147,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="transaction update - alireza chahardaghi" />
     <MESSAGE value=" update - alireza chahardaghi" />
-    <option name="LAST_COMMIT_MESSAGE" value=" update - alireza chahardaghi" />
+    <MESSAGE value=" update - Negin Saatsaz" />
+    <option name="LAST_COMMIT_MESSAGE" value=" update - Negin Saatsaz" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Python_292120_OnlineStore$test.coverage" NAME="test Coverage Results" MODIFIED="1706283141203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
