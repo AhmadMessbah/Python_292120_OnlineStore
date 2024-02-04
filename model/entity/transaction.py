@@ -18,7 +18,7 @@ class Transaction(Base):
     user = relationship("User")
     stuff = relationship("Stuff")
 
-    def __init__(self,user, stuff, quantity, total_price):
+    def __init__(self,user, stuff, quantity, total_price ,date_time):
         self.user = user
         self.stuff = stuff
         self.quantity = quantity

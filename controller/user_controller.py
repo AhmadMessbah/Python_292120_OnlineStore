@@ -1,6 +1,6 @@
 from model.da.user_da import UserDa
 from model.entity.user import User
-from model.tools.validation import name_validator, national_id_validator
+from model.tools.validation import name_validator
 import tkinter.messagebox as msg
 
 class UserController:
