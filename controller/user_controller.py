@@ -1,58 +1,72 @@
-import mysql.connector
-
-from model.entity import user
-
+from model.da.user_da import UserDa
+from model.entity.user import User
+from model.tools.validation import name_validator, national_id_validator
+import tkinter.messagebox as msg
 
 class UserController:
     def connect(self):
-        self.connection = mysql.connector.connect(user='root', password='root123', database='mft')
-        self.cursor = self.connection.cursor()
+
 
     def disconnect(self):
-        self.connection.close()
-        self.cursor.close()
 
 
     def save(self,  name, family, username, password, role, status=True):
-        self.connect()
-        self.cursor.execute(operation:"INSERT INTO User_tbl (name, family, username, password, role, status) values (%s, %s, %s, %s, %s)",
-                            params[user.name , user.family , user.username , user.password , user.role , user.status])
-        self.connection.commit()
-        self.disconnect()
+        try:
+            user = User(id, name, family, username, password, role,status)
+            da = UserDa()
+            da.save(user)
+            return "User saved"
+        except Exception as e:
+            return "Error saving"
 
 
     def edit(self,  id, name, family, username, password, role, status):
-        self.connect()
-        self.cursor.execute(operation:"UPDATE User_tbl set name = %s, family = %s, username = %s, password = %s , role = %s, status = %s where id = %s",
-        params:[user.name , user.family , user.username, user.password , user.role , user.id])
-        self.disconnect()
+        try:
+            user = User(id, name, family, username, password, role,status)
+            da = UserDa()
+            da.save(user)
+            return "User edit"
+        except Exception as e:
+            return "Error saving"
 
 
     def remove(self, id):
-        self.connect()
-        self.cursor.execute(operation :"DELETE FROM User_tbl where id = %s" ,
-        params :[user.id])
+        try:
+            da = UserDa()
+            da.remove(id)
+            return "person has been removed"
 
+        except Exception as e:
+            return "Error while"
 
     def find_all(self):
-        self.connect()
-        self.cursor.execute("select * from Users")
-        user = self.cursor.fetchall()
-        self.disconnect()
-        return user
+        try:
+            da = UserDa()
+            da.find_all(id)
+            return "person found"
+
+        except Exception as e:
+            return "Error finding"
+
 
     def find_by_username(self, username):
-        self.connect()
-        self.cursor.execute(operation:"SELECT * from user_tbl where username = %s", params:[username])
-        user = self.cursor.fetchone()
-        self.disconnect()
-        return user
+        try:
+           da = UserDa()
+           da.find_by_username(username)
+           return "person found by username"
+
+        except Exception as e:
+            return "Error while"
 
 
     def find_by_username_and_password(self, username, password):
-        self.connect():
-        self.cursor.execute(operation:"SELECT * from user_tbl where username = %s AND PASSWORD =%s",
-        params:[user.username , user.password])
-        user = self.cursor.fetchone()
-        self.disconnect()
-        return user
+        try:
+            da = UserDa()
+            da.find_by_username_password(username, password)
+            return "person found by username and password"
+
+        except Exception as e:
+            return "Error while"
+
+        class UserController:
+            pass

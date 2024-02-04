@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df315236-a6b0-4d49-8d2b-dc56148002e0" name="Changes" comment=" update - Negin Saatsaz">
-      <change beforePath="$PROJECT_DIR$/model/entity/payment.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/entity/payment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/entity/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/entity/storage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/entity/stuff.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/entity/stuff.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/payment_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/storage_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/stuff_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/transaction_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a1fdda57-d631-4b12-a027-5c0440d2198c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a1fdda57-d631-4b12-a027-5c0440d2198c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/user_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controller/user_controller.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,26 +66,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.test.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Student/Desktop/Python_292120_OnlineStore",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Student/Desktop/Python_292120_OnlineStore&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Student\Desktop\Python_292120_OnlineStore" />
@@ -104,7 +108,8 @@
       <updated>1706269575233</updated>
       <workItem from="1706269576370" duration="2000" />
       <workItem from="1706873118086" duration="5029000" />
-      <workItem from="1706989359355" duration="319000" />
+      <workItem from="1706989359355" duration="532000" />
+      <workItem from="1707069113334" duration="1031000" />
     </task>
     <task id="LOCAL-00001" summary=" update - alireza chahardaghi">
       <option name="closed" value="true" />
@@ -138,7 +143,23 @@
       <option name="project" value="LOCAL" />
       <updated>1706989450899</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=" update - Negin Saatsaz">
+      <option name="closed" value="true" />
+      <created>1706989683454</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706989683454</updated>
+    </task>
+    <task id="LOCAL-00006" summary=" update - Negin Saatsaz">
+      <option name="closed" value="true" />
+      <created>1706989791732</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706989791732</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
