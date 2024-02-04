@@ -1,13 +1,13 @@
 from model.da.transaction_da import TransactionDa
 from model.entity.transaction import Transaction
-from model.tools.validation import name_validator
+from model.tools.validation import date_validator
 import tkinter.messagebox as msg
 
 class TransactionController:
     def save(self,user, stuff, quantity, total_price ,date_time, status=True):
         try:
-            if date_validator(date, "error"):
-                timing = Transaction(date=date_time)
+            if date_validator(date_time, "error"):
+                transaction = Transaction(date=date_time)
                 da = TransactionDa()
                 da.save(transaction)
                 return " saved"
@@ -16,7 +16,7 @@ class TransactionController:
 
     def edit(self,user, stuff, quantity, total_price ,date_time, status):
         try:
-            user = User(id,user, stuff, quantity, total_price ,date_time, status)
+            transaction = Transaction(id,user, stuff, quantity, total_price ,date_time, status)
             da = TransactionDa()
             da.save(Transaction)
             return "Transaction edit"
@@ -35,7 +35,7 @@ class TransactionController:
 
     def find_all(self):
         try:
-            da = UserDa()
+            da = TransactionDa()
             da.find_all(id)
             return "Transaction found"
 
@@ -43,21 +43,29 @@ class TransactionController:
             return "Error finding"
 
 
-    def find_by_username(self, username):
+    def find_by_user(self, user):
         try:
-           da = UserDa()
-           da.find_by_username(username)
-           return "Transaction found by username"
+           da = TransactionDa()
+           da.find_by_user(user)
+           return "Transaction found by user"
 
         except Exception as e:
             return "Error while"
 
-
-    def find_by_username_and_password(self, username, password):
+    def find_by_user(self, date_time):
         try:
-            da = UserDa()
-            da.find_by_username_and_password(username, password)
-            return "Transaction found by username and password"
+           da = TransactionDa()
+           da.find_date_time(date_time)
+           return "Transaction found by date/time"
+
+        except Exception as e:
+            return "Error while"
+
+    def find_by_username_and_password(self,quantity):
+        try:
+            da = TransactionDa()
+            da.find_by_quantity(quantity)
+            return "Transaction found by quantity"
 
         except Exception as e:
             return "Error while"

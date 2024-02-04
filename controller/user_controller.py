@@ -17,9 +17,9 @@ class UserController:
             return "Error saving"
 
 
-    def edit(self,  id, name, family, username, password, role, status):
+    def edit(self,  id, name, family, username, password, role ):
         try:
-            user = User(id, name, family, username, password, role,status)
+            user = User(id, name, family, username, password, role)
             da = UserDa()
             da.save(user)
             return "User edit"
