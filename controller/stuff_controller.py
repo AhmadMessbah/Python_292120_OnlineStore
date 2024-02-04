@@ -9,17 +9,17 @@ class StuffController:
 
     def save(self, name, brand, model, buy_price, description):
         try:
-            user = Stuff(id, name, brand, model, buy_price, descriptions)
+            stuff = Stuff(id, name, brand, model, buy_price, descriptions)
             da = StuffDa()
             da.save(stuff)
-            return "User saved"
+            return "Stuff saved"
         except Exception as e:
             return "Error saving"
 
 
     def edit(self,id, name, brand, model, buy_price, descriptions):
         try:
-            user = Stuff(id, name, brand, model, buy_price, descriptions)
+            stuff = Stuff(id, name, brand, model, buy_price, descriptions)
             da = StuffDa()
             da.save(stuff)
             return "Stuff edit"
