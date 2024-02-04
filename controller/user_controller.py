@@ -4,10 +4,7 @@ from model.tools.validation import name_validator, national_id_validator
 import tkinter.messagebox as msg
 
 class UserController:
-    def connect(self):
 
-
-    def disconnect(self):
 
 
     def save(self,  name, family, username, password, role, status=True):
@@ -62,7 +59,7 @@ class UserController:
     def find_by_username_and_password(self, username, password):
         try:
             da = UserDa()
-            da.find_by_username_password(username, password)
+            da.find_by_username_and_password(username, password)
             return "person found by username and password"
 
         except Exception as e:
