@@ -79,4 +79,7 @@ class TransactionController:
         except Exception as e:
             return "Error while"
 
+    def change_stuff_quantity(self,quantity,stuff):
+        transaction = storage.get(transaction_id)
+
 
