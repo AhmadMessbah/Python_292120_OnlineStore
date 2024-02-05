@@ -56,11 +56,11 @@ class StuffController:
             return "Error while"
 
 
-    def find_by_brand(self,brand):
+    def find_by_brand(self,count):
         try:
-            da = StuffDa()
-            da.find_by_brand(brand)
-            return "person found by brand"
+            da = StorageDa()
+            da.find_by_brand(count)
+            return "storage found by count"
 
         except Exception as e:
             return "Error while"

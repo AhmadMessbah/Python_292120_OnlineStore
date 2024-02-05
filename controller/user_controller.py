@@ -1,15 +1,15 @@
 from model.da.user_da import UserDa
 from model.entity.user import User
-from model.tools.validation import name_validator
+from model.tools.validation import name_validator and family_validator and phone_validator
 import tkinter.messagebox as msg
 
 class UserController:
 
 
 
-    def save(self,  name, family, username, password, role, status=True):
+    def save(self,  name, family, username, password, role, phone , status=True):
         try:
-            user = User(id, name, family, username, password, role,status)
+            user = User(id, name, family, username, password, role, phone)
             da = UserDa()
             da.save(user)
             return "User saved"
@@ -17,9 +17,9 @@ class UserController:
             return "Error saving"
 
 
-    def edit(self,  id, name, family, username, password, role ):
+    def edit(self,  id, name, family, username, password, role , phone ):
         try:
-            user = User(id, name, family, username, password, role)
+            user = User(id, name, family, username, password, role , phone)
             da = UserDa()
             da.save(user)
             return "User edit"
@@ -64,6 +64,16 @@ class UserController:
 
         except Exception as e:
             return "Error while"
+
+    def find_by_phone(self, phone):
+        try:
+            da = UserDa()
+            da.find_by_phone(phone)
+            return "person found by username"
+
+        except Exception as e:
+            return "Error while"
+
 
         class UserController:
             pass

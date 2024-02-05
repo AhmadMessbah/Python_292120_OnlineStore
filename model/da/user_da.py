@@ -11,5 +11,5 @@ class UserDa(DatabaseManager):
 
     def find_by_username_and_password(self, username, password):
         self.make_engine()
-        entity = self.session.query(User).filter(and_( User.username == username, User.password == password)).all()
+        entity = self.session.query(User).filter( User.username == username, User.password == password).all()
         return entity.first()

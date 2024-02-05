@@ -79,7 +79,28 @@ class TransactionController:
         except Exception as e:
             return "Error while"
 
-    def change_stuff_quantity(self,quantity,stuff):
-        transaction = storage.get(transaction_id)
+    def change_quantity_of_stuff(self,quantity,stuff):
+        transaction = Transaction.get(id)
 
+        if transaction and transaction.status == "pending":
+
+        Stuff = stuff.objects.get(id=stuff)
+
+        if quantity > 0 and quantity <= stuff.available_quantity:
+
+            stuff.available_quantity -= quantity
+            stuff.save()
+
+            transaction.status = "completed"
+            transaction.save()
+
+            return "Transaction completed successfully"
+        else:
+
+            return "Invalid quantity"
+        else:
+
+        return "Invalid transaction"
+total_price = sum(prices)
+print('Total price is',total_price)
 

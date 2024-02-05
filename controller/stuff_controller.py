@@ -65,7 +65,7 @@ class StuffController:
         except Exception as e:
             return "Error while"
 
-    def find_by_brand(self, model):
+    def find_by_model(self, model):
         try:
             da = StuffDa()
             da.find_by_model(model)
