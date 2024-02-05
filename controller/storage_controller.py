@@ -9,11 +9,11 @@ class StuffController:
 
     def save(self,stuff, count):
         try:
-            stuff = Stuff(id,stuff, count)
-            da = StuffDa()
-            da.save(stuff)
+            storage = Storage(id,stuff, count)
+            da = StorageDa()
+            da.save(storage)
             return "Stuff saved"
-        except Exception as e:
+        except Exception :
             return "Error saving"
 
 
@@ -23,7 +23,7 @@ class StuffController:
             da = StorageDa()
             da.save(storage)
             return "storage edit"
-        except Exception as e:
+        except Exception :
             return "Error saving"
 
 
@@ -33,7 +33,7 @@ class StuffController:
             da.remove(id)
             return "Storage has been removed"
 
-        except Exception as e:
+        except Exception :
             return "Error while"
 
     def find_all(self):
@@ -42,7 +42,7 @@ class StuffController:
             da.find_all(id)
             return "storage found"
 
-        except Exception as e:
+        except Exception :
             return "Error finding"
 
 
@@ -52,16 +52,16 @@ class StuffController:
            da.find_by_stuff(stuff)
            return "Storage found by stuff"
 
-        except Exception as e:
+        except Exception :
             return "Error while"
 
 
-    def find_by_brand(self,brand):
+    def find_by_brand(self,count):
         try:
-            da = StuffDa()
-            da.find_by_brand(brand)
-            return "person found by brand"
+            da = StorageDa()
+            da.find_by_brand(count)
+            return "storage found by count"
 
-        except Exception as e:
+        except Exception :
             return "Error while"
 

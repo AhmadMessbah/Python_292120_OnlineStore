@@ -13,7 +13,7 @@ class StuffController:
             da = StuffDa()
             da.save(stuff)
             return "Stuff saved"
-        except Exception as e:
+        except Exception :
             return "Error saving"
 
 
@@ -23,7 +23,7 @@ class StuffController:
             da = StuffDa()
             da.save(stuff)
             return "Stuff edit"
-        except Exception as e:
+        except Exception :
             return "Error saving"
 
 
@@ -33,7 +33,7 @@ class StuffController:
             da.remove(id)
             return "Stuff has been removed"
 
-        except Exception as e:
+        except Exception :
             return "Error while"
 
     def find_all(self):
@@ -42,7 +42,7 @@ class StuffController:
             da.find_all(id)
             return "Stuff found"
 
-        except Exception as e:
+        except Exception :
             return "Error finding"
 
 
@@ -52,7 +52,7 @@ class StuffController:
            da.find_by_username(name)
            return "Stuff found by name"
 
-        except Exception as e:
+        except Exception :
             return "Error while"
 
 
@@ -62,15 +62,15 @@ class StuffController:
             da.find_by_brand(brand)
             return "person found by brand"
 
-        except Exception as e:
+        except Exception :
             return "Error while"
 
-    def find_by_brand(self, model):
+    def find_by_model(self, model):
         try:
             da = StuffDa()
             da.find_by_model(model)
             return "person found by model"
 
-        except Exception as e:
+        except Exception :
             return "Error while"
 

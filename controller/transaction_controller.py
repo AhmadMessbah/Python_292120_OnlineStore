@@ -20,7 +20,7 @@ class TransactionController:
             da = TransactionDa()
             da.save(Transaction)
             return "Transaction edit"
-        except Exception as e:
+        except Exception :
             return "Error saving"
 
 
@@ -30,7 +30,7 @@ class TransactionController:
             da.remove(id)
             return "Transaction has been removed"
 
-        except Exception as e:
+        except Exception :
             return "Error while"
 
     def find_all(self):
@@ -39,7 +39,7 @@ class TransactionController:
             da.find_all(id)
             return "Transaction found"
 
-        except Exception as e:
+        except Exception :
             return "Error finding"
 
 
@@ -49,7 +49,7 @@ class TransactionController:
            da.find_by_user(user)
            return "Transaction found by user"
 
-        except Exception as e:
+        except Exception :
             return "Error while"
 
     def find_by_date_time(self, date_time):
@@ -58,7 +58,7 @@ class TransactionController:
            da.find_date_time(date_time)
            return "Transaction found by date/time"
 
-        except Exception as e:
+        except Exception :
             return "Error while"
 
     def find_by_quantity(self,quantity):
@@ -76,10 +76,31 @@ class TransactionController:
             da.find_by_stuff(stuff)
             return "Transaction found by stuff"
 
-        except Exception as e:
+        except Exception :
             return "Error while"
 
-    def change_stuff_quantity(self,quantity,stuff):
-        transaction = storage.get(transaction_id)
+    def change_quantity_of_stuff(self,quantity,stuff):
+        transaction = Transaction.get(id)
 
+        if transaction and transaction.status == "pending":
+
+        Stuff = stuff.objects.get(id=stuff)
+
+        if quantity > 0 and quantity <= stuff.available_quantity:
+
+            stuff.available_quantity -= quantity
+            stuff.save()
+
+            transaction.status = "completed"
+            transaction.save()
+
+            return "Transaction completed successfully"
+        else:
+
+            return "Invalid quantity"
+        else:
+
+        return "Invalid transaction"
+total_price = sum(buy_prices)
+print('Total price is',total_price)
 
