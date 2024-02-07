@@ -1,6 +1,7 @@
 from model.da.transaction_da import TransactionDa
 from model.entity.transaction import Transaction
 from model.tools.validation import date_validator
+from model.da.payment_da import PaymentDa
 import tkinter.messagebox as msg
 
 class TransactionController:
@@ -78,6 +79,12 @@ class TransactionController:
 
         except Exception as e:
             return "Error while"
+
+    def find_payment_count_by_user_id(self,id):
+        da = Payment()
+        return da.find_payment_count_by_user_id(id)
+
+    
 
     def change_quantity_of_stuff(self,quantity,stuff):
         transaction = Transaction.get(id)
