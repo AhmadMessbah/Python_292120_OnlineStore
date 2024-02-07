@@ -19,3 +19,6 @@ class Payment(Base):
         self.buy_price = buy_price
         self.description = description
 
+   def __repr__(self):
+          return str(self.__dict__)
+
