@@ -3,7 +3,7 @@ from sqlalchemy.orm import relationship
 from model.entity.base import Base
 
 class Storage(Base):
-    __tablename__ = "stuff_tbl"
+    __tablename__ = "storage_tbl"
     id = Column(Integer, primary_key=True)
     stuff_id = Column(Integer, ForeignKey("stuff_tbl.id"))
     stuff = Column(String(30))
