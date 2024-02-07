@@ -17,3 +17,9 @@ class PaymentDa(DatabaseManager):
         self.make_engine()
         entity = self.session.query(Payment).filter(Payment.buy_price == buy_price).all()
         return entity.first()
+
+
+   def find_payment_coumt_by_user_id(self, id):
+        self.make_engine()
+        entity = self.session.query(Payment).filter(Payment.id == id).all()
+        return entity.first()
