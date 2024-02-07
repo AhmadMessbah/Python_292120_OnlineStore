@@ -2,7 +2,7 @@ from sqlalchemy import Column, Integer, String, Boolean
 from model.entity.base import Base
 
 class Payment(Base):
-    __tablename__ = "stuff_tbl"
+    __tablename__ = "payment_tbl"
     id = Column(Integer, primary_key=True)
     name = Column(String(30))
     model = Column(String(30))
