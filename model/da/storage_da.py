@@ -18,8 +18,8 @@ class StorageDa(DatabaseManager):
    def remove(self, id):
         self.make_engine()
         entity = self.session.query(Storage).filter(Storage.id == id).all()
-       if entity.firdt().count > 0 :
-           entity.update([storage.count: entity.first().count - 1])
-           self.session.comit()
+        if entity.firdt().count > 0 :
+             entity.update([storage.count: entity.first().count - 1])
+             self.session.comit()
         return entity.first()
 
