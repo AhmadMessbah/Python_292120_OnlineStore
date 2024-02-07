@@ -13,3 +13,8 @@ class StorageDa(DatabaseManager):
         self.make_engine()
         entity = self.session.query(Storage).filter(Storage.count == count).all()
         return entity.first()
+
+    def find_by_id(self, id):
+        self.make_engine()
+        entity = self.session.query(Storage).filter(Storage.id == id).all()
+        return entity.first()
