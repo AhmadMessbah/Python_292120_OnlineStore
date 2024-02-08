@@ -1,6 +1,7 @@
 import tkinter
 from tkinter import messagebox
 import tkinter as tk
+from tkinter import ttk
 
 
 class Application :
