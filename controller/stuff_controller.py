@@ -1,6 +1,6 @@
 from model.da.stuff_da import StuffDa
 from model.entity.stuff import Stuff
-from model.tools.validation import name_validator
+from validators.validator import name_validator
 import tkinter.messagebox as msg
 
 class StuffController:

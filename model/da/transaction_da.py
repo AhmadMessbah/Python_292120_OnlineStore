@@ -1,5 +1,7 @@
 from model.da.database_manager import DatabaseManager
 from model.entity.transaction import Transaction
+from model.da.payment_da import Payment
+
 
 class TransactionDa(DatabaseManager):
     def find_by_date(self, date):

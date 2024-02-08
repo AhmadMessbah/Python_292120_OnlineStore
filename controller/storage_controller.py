@@ -1,6 +1,6 @@
 from model.da.storage_da import StorageDa
 from model.entity.storage import Storage
-from model.tools.validation import name_validator
+from validators.validator import name_validator
 import tkinter.messagebox as msg
 
 class StuffController:

@@ -1,7 +1,8 @@
 from model.da.transaction_da import TransactionDa
 from model.entity.transaction import Transaction
-from model.tools.validation import date_validator
+from validators.validator import date_validator
 import tkinter.messagebox as msg
+from model.da.payment_da import Payment
 
 class TransactionController:
     def save(self,user, stuff, quantity, total_price ,date_time, status=True):
@@ -101,6 +102,6 @@ class TransactionController:
         else:
 
         return "Invalid transaction"
-total_price = sum(buy_prices)
+total_price = sum(bu)
 print('Total price is',total_price)
 

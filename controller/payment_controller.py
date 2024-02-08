@@ -1,13 +1,13 @@
 from model.da.payment_da import PaymentDa
 from model.entity.payment import Payment
-from model.tools.validation import name_validator and family_validator
+from validators.validator import name_validator, family_validator
 import tkinter.messagebox as msg
 
 class UserController:
 
 
 
-    def save(self,name,model,buy_price,description, status=True):
+    def save(self, name ,model , buy_price, description , status=True):
         try:
             payment = Payment(id,name,model,buy_price,description)
             da = PaymentDa()

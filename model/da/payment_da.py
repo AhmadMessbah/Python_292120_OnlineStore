@@ -1,6 +1,7 @@
 from model.da.database_manager import *
 from model.entity.payment import Payment
 
+
 class PaymentDa(DatabaseManager):
 
     def find_by_name(self, name):
