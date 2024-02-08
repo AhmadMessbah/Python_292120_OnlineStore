@@ -99,9 +99,7 @@ class TransactionController:
         else:
 
             return "Invalid quantity"
-        else:
 
-        return "Invalid transaction"
 total_price = sum(bu)
 print('Total price is',total_price)
 
