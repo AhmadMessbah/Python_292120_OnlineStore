@@ -2,8 +2,8 @@ from sqlalchemy import Column, Integer, String, Boolean
 from sqlalchemy.orm import relationship
 from model.entity.base import Base
 
-class Storage(base):
-    __tablename__ = "stuff_tbl"
+class Storage(Base):
+    __tablename__ = "storage_tbl"
     id = Column(Integer, primary_key=True)
     stuff_id = Column(Integer, ForeignKey("stuff_tbl.id"))
     stuff = Column(String(30))
