@@ -31,7 +31,5 @@ class Application :
         self.window.mainloop()
 
 
-    def login_click(self) :
-        Application()
-
-
+    # def login_click(self) :
+    #     Application()

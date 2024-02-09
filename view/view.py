@@ -14,7 +14,7 @@ class Login :
         #username
         label = tkinter.Label( self.window, text= "username", font=("Arial") ).pack( )
         username = tkinter.Entry( self.window, font=("Arial") )
-        entry = tkinter.Entry( self.window, textvariable=username ).pack( )
+        entry = tkinter.Entry( self.window, textvariable= username ).pack( )
 
 
 

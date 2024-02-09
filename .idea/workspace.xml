@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df315236-a6b0-4d49-8d2b-dc56148002e0" name="Changes" comment=" update - Ashkan Roshani">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a1fdda57-d631-4b12-a027-5c0440d2198c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a1fdda57-d631-4b12-a027-5c0440d2198c.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/transaction_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controller/transaction_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,26 +63,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Student/Desktop/Python_292120_OnlineStore&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.app.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.view_stuff.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Student/Desktop/Python_292120_OnlineStore",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Student\Desktop\Python_292120_OnlineStore" />
@@ -110,6 +114,7 @@
       <workItem from="1707150208369" duration="5609000" />
       <workItem from="1707392085560" duration="2188000" />
       <workItem from="1707420998121" duration="784000" />
+      <workItem from="1707476938632" duration="7927000" />
     </task>
     <task id="LOCAL-00001" summary=" update - alireza chahardaghi">
       <option name="closed" value="true" />
@@ -279,10 +284,17 @@
           <url>file://$PROJECT_DIR$/model/da/transaction_da.py</url>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/view/app.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Python_292120_OnlineStore$view_stuff.coverage" NAME="view_stuff Coverage Results" MODIFIED="1707495084121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view" />
     <SUITE FILE_PATH="coverage/Python_292120_OnlineStore$test.coverage" NAME="test Coverage Results" MODIFIED="1707073382681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Python_292120_OnlineStore$app.coverage" NAME="app Coverage Results" MODIFIED="1707477443907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view" />
   </component>
 </project>
