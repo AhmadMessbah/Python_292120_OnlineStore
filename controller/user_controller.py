@@ -25,7 +25,7 @@ class UserController:
             return e
 
 
-    def edit(self, id , name, family, username, password, phone , status=True ):
+    def edit_by_user(self, id , name, family, username, password, phone , status=True ):
         try:
             da = UserDa()
             user = da.edit_by_user(user,id)
