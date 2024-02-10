@@ -34,7 +34,7 @@ class StuffController:
             return e
 
 
-    def remove_stuff_by_id(self, id):
+    def remove(self, id):
         try:
             da = StuffDa()
             result = da.remove(stuff , id)
