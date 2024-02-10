@@ -33,8 +33,9 @@ class StorageController:
     def remove_by_id(self, id):
         try:
             da = StorageDa()
-            da.remove_by_id(storage, id)
-            return f"storage {id} has been removed"
+            result = da.remove_by_id(storage, id)
+            if result:
+                return f"storage {id} has been removed"
 
         except Exception as e:
             print(e)
@@ -43,7 +44,7 @@ class StorageController:
       def find_by_id(self, id):
         try:
             da = storageDa()
-            medical = da.find_by_id(storage, id)
+            storage = da.find_by_id(storage, id)
             print(storage)
             if storage:
                 return f"find storage by id {id}"
