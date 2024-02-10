@@ -21,8 +21,10 @@ class UserController:
             result = da.save(user)
         
         except Exception as e:
-            e.with_traceback()
-            return e
+           if result:
+                  return f"{user} saved"
+        except Exception as e:
+            print(e)
 
 
     def edit_by_user(self, id , name, family, username, password, phone , status=True ):
@@ -41,10 +43,10 @@ class UserController:
             return e
 
 
-    def remove_user_by_id(self, id):
+    def remove_by_id(self, id):
         try:
             da = UserDa()
-            result = da.remove_user_by_id(user,id)
+            result = da.remove_by_id(user,id)
             if result:
                 return f"person has been removed by id{id}"
 
