@@ -7,7 +7,8 @@ from model.da.payment_da import Payment
 class TransactionController:
     def save(self,user, stuff, quantity, total_price ,date_time, status=True):
         try:
-            if date_validator(date_time, "error"):
+            if (date_validator(date_time, "error")
+                    and user
                 transaction = Transaction(date=date_time)
                 da = TransactionDa()
                 da.save(transaction)
