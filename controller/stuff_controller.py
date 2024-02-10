@@ -36,7 +36,17 @@ class StuffController:
 
         except Exception as e:
             return e
-"
+
+    
+    def find_stuff_by_id(self, id):
+        try:
+            da = StuffDaDa()
+            medical = da.find_stuff_by_id(stuff, id)
+            print(stuff)
+            if stuff:
+                return f"find stuff by id {id}"
+        except Exception as e:
+            print(e)
 
 
     def find_by_name(self, name):
