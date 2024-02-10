@@ -1,37 +1,25 @@
 from model.da.database_manager import DatabaseManager
 from model.entity.transaction import Transaction
-from model.da.payment_da import Payment
+
 
 
 class TransactionDa(DatabaseManager):
-    def find_by_date(self, date):
+    def find_by_date_time(self, date_time):
         self.make_engine()
-        entity = self.session.query(Transaction).filter_by(date=date)
-        return entity
+        result = self.session.query(Transaction).filter_by(date_time=date_time)
+        return result
 
-    def find_by_user(self, user):
+    def find_by_username(self, username):
         self.make_engine()
-        entity = self.session.query(Transaction).filter_by(user=user)
-        return entity
+        result = self.session.query(Transaction).filter_by(username=username)
+        return result
 
 
-    def find_by_quantity(self, quantity):
+    def find_by_id(self, id):
         self.make_engine()
-        entity = self.session.query(Transaction).filter_by(quantity=quantity)
-        return entity
+        result = self.session.query(Transaction).filter_by(id=id)
+        return result
 
 
-    def find_by_stuff(self, stuff):
-        self.make_engine()
-        entity = self.session.query(Transaction).filter_by(stuff=stuff)
-        return entity
-
-
-    def find_by_quantity_of_stuff(self,quantity,stuff):
-        self.make_engine()
-        entity = self.session.query(Transaction).filter( Transaction.quantity == quantity, Transaction.stuff == stuff).all()
-        return entity.first()
-
-
-    def find_all(self):
+   def find_all(self, **kwargs):
         pass
