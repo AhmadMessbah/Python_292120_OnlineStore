@@ -4,9 +4,6 @@ from validators.validator import name_validator , family_validator , phone_valid
 
 
 class UserController:
-
-
-
     def save(self,  name, family, username, password, phone, role , status=True):
         try:
             user = User(name_validator(name, "invalid name"), 
