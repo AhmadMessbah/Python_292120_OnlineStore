@@ -3,65 +3,72 @@ from model.entity.storage import Storage
 from validators.validator import name_validator
 import tkinter.messagebox as msg
 
-class StuffController:
+class StorageController:
 
 
 
     def save(self,stuff, count):
         try:
-            storage = Storage(id,stuff, count)
+            storage = storage(name_validator(stuff , "invalid stuff"), count)
             da = StorageDa()
-            da.save(storage)
-            return "Stuff saved"
-        except Exception :
-            return "Error saving"
+            result = da.save(storage)
+              if result:
+                  return f"{storage} saved"
+        except Exception as e:
+            print(e)
 
-
-    def edit(self,id,stuff, count):
-        try:
-            storage = Storage(id,stuff, count)
-            da = StorageDa()
-            da.save(storage)
-            return "storage edit"
-        except Exception :
-            return "Error saving"
-
-
-    def remove(self, id):
+    def edit(self, id , stuff , count):
         try:
             da = StorageDa()
-            da.remove(id)
-            return "Storage has been removed"
+            storage = da.find_by_id(storage , id)
+            if storage:
+                storage.stuff = name_validator(stuff, "invalid stuff")
+                storage.count = count
+                da.edit(storage)
+                return f"storage {id} edited"
+        except Exception as e:
+            print(e)
 
-        except Exception :
-            return "Error while"
 
-    def find_all(self):
+    def remove_by_id(self, id):
         try:
             da = StorageDa()
-            da.find_all(id)
-            return "storage found"
+            da.remove_by_id(storage, id)
+            return f"storage {id} has been removed"
 
-        except Exception :
-            return "Error finding"
+        except Exception as e:
+            print(e)
 
 
+      def find_by_id(self, id):
+        try:
+            da = storageDa()
+            medical = da.find_by_id(storage, id)
+            print(storage)
+            if storage:
+                return f"find storage by id {id}"
+        except Exception as e:
+            print(e)
+    
+
+    
     def find_by_stuff(self, stuff):
         try:
-           da = StorageDa()
-           da.find_by_stuff(stuff)
-           return "Storage found by stuff"
+            if name_validator(stuff, "invalid stuff"):
+                da = StorageDa()
+                result = da.find_by_stuff(stuff)
+                if result:
+                    return f"storage {stuff} found"
+        except Exception as e:
+            print(e)
 
-        except Exception :
-            return "Error while"
 
-
-    def find_by_brand(self,count):
+    def find_by_count(self, count):
         try:
             da = StorageDa()
-            da.find_by_brand(count)
-            return "storage found by count"
-
-        except Exception :
-            return "Error while"
+            result = da.find_by_count(count)
+            if result:
+                return f"storage {count} found"
+        except Exception as e:
+            print(e)
 
