@@ -9,12 +9,12 @@ class StuffController:
 
     def save(self, name, brand, model, buy_price, description):
         try:
-            stuff = Stuff(id, name, brand, model, buy_price, descriptions)
+            stuff = Stuff(name_validator(brand, model, buy_price, descriptions)
             da = StuffDa()
-            da.save(stuff)
+            result = da.save(stuff)
             return "Stuff saved"
-        except Exception :
-            return "Error saving"
+        except Exception as e:
+            print(e)
 
 
     def edit(self,id, name, brand, model, buy_price, descriptions):
@@ -27,50 +27,46 @@ class StuffController:
             return "Error saving"
 
 
-    def remove(self, id):
+    def remove_stuff_by_id(self, id):
         try:
             da = StuffDa()
-            da.remove(id)
-            return "Stuff has been removed"
+            result = da.remove(stuff , id)
+            if result :
+               return f"Stuff has been removed by {id}"
 
-        except Exception :
-            return "Error while"
-
-    def find_all(self):
-        try:
-            da = StuffDa()
-            da.find_all(id)
-            return "Stuff found"
-
-        except Exception :
-            return "Error finding"
+        except Exception as e:
+            return e
+"
 
 
     def find_by_name(self, name):
         try:
            da = StuffDa()
-           da.find_by_username(name)
-           return "Stuff found by name"
+           result = da.find_by_name(stuff , name)
+           if result:
+               return f"Stuff found by name {name}"
 
-        except Exception :
-            return "Error while"
+        except Exception as: e
+            return e
 
 
-    def find_by_brand(self,brand):
+    def find_by_brand(self, brand):
         try:
-            da = StuffDa()
-            da.find_by_brand(brand)
-            return "person found by brand"
+           da = StuffDa()
+           result = da.find_by_brand(stuff , brand)
+           if result:
+               return f"Stuff found by brand {brand}"
 
-        except Exception :
-            return "Error while"
+        except Exception as: e
+            return e
 
     def find_by_model(self, model):
         try:
-            da = StuffDa()
-            da.find_by_model(model)
-            return "person found by model"
+           da = StuffDa()
+           result = da.find_by_model(stuff , model)
+           if result:
+               return f"Stuff found by model {model}"
 
-        except Exception :
-            return "Error while"
+        except Exception as: e
+            return e
 
