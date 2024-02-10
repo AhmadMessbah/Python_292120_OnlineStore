@@ -64,10 +64,4 @@ class PaymentController:
         except Exception :
             return "Error while"
 
-    def find_by_buy_price(self, buy_price):
-        try:
-            da = PaymentDa()
-            da.find_by_model(buy_price)
-            return "buy price found"
-        except Exception :
-            return "Error while"
+   
