@@ -88,7 +88,7 @@ class UserController:
             da = UserDa()
             result = da.find_by_name_and_family(name, family)
             if result:
-                return f"person found by name and family {name , family}"
+                return f"person found by name and family {name }{ family}"
 
         except Exception as e :
             return e
