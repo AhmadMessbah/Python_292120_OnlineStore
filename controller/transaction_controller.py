@@ -5,81 +5,58 @@ import tkinter.messagebox as msg
 from model.da.payment_da import Payment
 
 class TransactionController:
-    def save(self,user, stuff, quantity, total_price ,date_time, status=True):
+    def save(self,usernsme , stuff, quantity, total_price ,date_time, status=True):
         try:
-            if (date_validator(date_time, "error")
-                    and user
+            if  date_validator(date_time, "error"):
                 transaction = Transaction(date=date_time)
                 da = TransactionDa()
-                da.save(transaction)
-                return " saved"
-        except Exception as e:
-            msg.showerror("error", f"error : {e}")
-
-    def edit(self,user, stuff, quantity, total_price ):
-        try:
-            transaction = Transaction(id,user, stuff, quantity )
-            da = TransactionDa()
-            da.save(Transaction)
-            return "Transaction edit"
-        except Exception :
-            return "Error saving"
+                result = da.save(transaction)
+            except Exception as e:
+                 e.with_traceback()
+                 return e
 
 
-    def remove(self, id):
+    def remove_transaction_by_id(self, id):
         try:
             da = TransactionDa()
-            da.remove(id)
-            return "Transaction has been removed"
+            result = da.remove_transaction_by_id(transaction , id)
+            return f"Transaction has been removed by id {id}"
 
-        except Exception :
-            return "Error while"
-
-    def find_all(self):
-        try:
-            da = TransactionDa()
-            da.find_all(id)
-            return "Transaction found"
-
-        except Exception :
-            return "Error finding"
+        except Exception as e :
+            return e
 
 
-    def find_by_user(self, user):
+    def find_by_user(self, username):
         try:
            da = TransactionDa()
-           da.find_by_user(user)
-           return "Transaction found by user"
+           result = da.find_by_user(transaction , username)
+           if result:
+              return f"Transaction found by username {username}"
 
-        except Exception :
-            return "Error while"
+        except Exception as e:
+            return e
 
     def find_by_date_time(self, date_time):
         try:
-           da = TransactionDa()
-           da.find_date_time(date_time)
-           return "Transaction found by date/time"
-
-        except Exception :
-            return "Error while"
-
-    def find_by_quantity(self,quantity):
-        try:
-            da = TransactionDa()
-            da.find_by_quantity(quantity)
-            return "Transaction found by quantity"
+            if date_validator(date , "error"):
+               da = TransactionDa()
+               result = da.find_date_time(date_time)
+               msg.showinfo("info", str(result))
+                
+               return "Transaction found by date_time {date_time}"
 
         except Exception as e:
-            return "Error while"
+            msg.showerror("error",f"error : {e}")
 
-    def find_by_stuff(self,stuff):
+    def find_transaction_by_id(self,id):
         try:
+            if date_validator(id . "error"):
             da = TransactionDa()
-            da.find_by_stuff(stuff)
-            return "Transaction found by stuff"
+            result = da.find_by_stuff(stuff)
+            msg.showinfo("info", str(result))
 
-        except Exception :
-            return "Error while"
+        except Exception as e:
+            msg.showerror("error",f"error : {e}")
 
     def change_quantity_of_stuff(self,quantity,stuff):
         transaction = Transaction.get(id)
