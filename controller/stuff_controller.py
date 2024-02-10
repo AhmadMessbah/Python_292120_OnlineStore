@@ -38,10 +38,10 @@ class StuffController:
             return e
 
     
-    def find_stuff_by_id(self, id):
+    def find_by_id(self, id):
         try:
             da = StuffDaDa()
-            medical = da.find_stuff_by_id(stuff, id)
+            stuff = da.find_id(stuff, id)
             print(stuff)
             if stuff:
                 return f"find stuff by id {id}"
