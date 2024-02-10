@@ -7,15 +7,24 @@ class StuffDa(DatabaseManager):
 
     def find_by_name(self, name):
         self.make_engine()
-        entity = self.session.query(Stuff).filter(Stuff.name == name).all()
-        return entity.first()
+        result = self.session.query(Stuff).filter(Stuff.name == name).all()
+        return result
 
-    def find_by_name(self, brand):
+    def find_by_brand(self, brand):
         self.make_engine()
-        entity = self.session.query(Stuff).filter(Stuff.brand == brand).all()
-        return entity.first()
+        result = self.session.query(Stuff).filter(Stuff.brand == brand).all()
+        return result
 
-    def find_by_name(self, model):
+    def find_by_model(self, model):
         self.make_engine()
-        entity = self.session.query(Stuff).filter(Stuff.model == model).all()
-        return entity.first()
+        result = self.session.query(Stuff).filter(Stuff.model == model).all()
+        return result
+
+
+    def find_by_id(self, id):
+        self.make_engine()
+        result = self.session.query(Stuff).filter(Stuff.id == id).all()
+        return result
+
+    def find_all(self, **kwargs):
+        pass
