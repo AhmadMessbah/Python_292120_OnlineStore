@@ -7,7 +7,9 @@ from model.da.payment_da import Payment
 class TransactionController:
     def save(self,usernsme , stuff, quantity, total_price ,date_time, status=True):
         try:
-            if  date_validator(date_time, "error"):
+            transaction = Transaction(username_validator(username, "invalid username"), 
+                          name_validator(stuff, "invalid stuff"),
+                          date_validator(date_time, "invalid date_time"),
                 transaction = Transaction(date=date_time)
                 da = TransactionDa()
                 result = da.save(transaction)
@@ -16,17 +18,27 @@ class TransactionController:
                  return e
 
 
-    def remove_transaction_by_id(self, id):
+    def remove_by_id(self, id):
         try:
             da = TransactionDa()
-            result = da.remove_transaction_by_id(transaction , id)
+            result = da.remove_by_id(transaction , id)
             return f"Transaction has been removed by id {id}"
 
         except Exception as e :
             return e
 
 
-    def find_by_user(self, username):
+    def find_by_id(self, id):
+        try:
+            da = TransactionDa()
+            result = da.find_by_id(transaction, id )
+            if result:
+                return f"transaction found by id {id}"
+
+        except Exception as e:
+            return e
+
+    def find_by_username(self, username):
         try:
            da = TransactionDa()
            result = da.find_by_user(transaction , username)
@@ -48,15 +60,6 @@ class TransactionController:
         except Exception as e:
             msg.showerror("error",f"error : {e}")
 
-    def find_transaction_by_id(self,id):
-        try:
-            if date_validator(id . "error"):
-            da = TransactionDa()
-            result = da.find_by_stuff(stuff)
-            msg.showinfo("info", str(result))
-
-        except Exception as e:
-            msg.showerror("error",f"error : {e}")
 
     def change_quantity_of_stuff(self,quantity,stuff):
         transaction = Transaction.get(id)
