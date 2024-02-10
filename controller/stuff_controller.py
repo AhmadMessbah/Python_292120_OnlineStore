@@ -19,12 +19,19 @@ class StuffController:
 
     def edit(self,id, name, brand, model, buy_price, descriptions):
         try:
-            stuff = Stuff(id, name, brand, model, buy_price, descriptions)
             da = StuffDa()
-            da.save(stuff)
+            stuff = stuff.find_by_id(stuff , id)
+
+            if stuff:
+                stuff.name =
+                stuff.brand = bramd
+                stuff.model = model
+                stuff.buy_price = buy_price
+                stuff.descriptions = descriptions
+            da.edit(stuff)
             return "Stuff edit"
-        except Exception :
-            return "Error saving"
+        except Exception as e:
+            return e
 
 
     def remove_stuff_by_id(self, id):
