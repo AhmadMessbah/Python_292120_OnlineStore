@@ -3,7 +3,7 @@ from model.entity.payment import Payment
 from validators.validator import name_validator, family_validator
 import tkinter.messagebox as msg
 
-class UserController:
+class PaymentController:
 
 
 
