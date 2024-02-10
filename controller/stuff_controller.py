@@ -51,6 +51,7 @@ class StuffController:
 
     def find_by_name(self, name):
         try:
+            if name_validator(name, "invalid name"):
            da = StuffDa()
            result = da.find_by_name(stuff , name)
            if result:
