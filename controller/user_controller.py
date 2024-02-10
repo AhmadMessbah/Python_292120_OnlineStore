@@ -1,77 +1,97 @@
 from model.da.user_da import UserDa
 from model.entity.user import User
-from validators.validator import name_validator , family_validator , phone_validator
-import tkinter.messagebox as msg
+from model.tools.validation import *
+
 
 class UserController:
 
 
 
-    def save(self,  name, family, username, password, role, phone , status=True):
+    def save(self,  name, family, username, password, phone, role , status=True):
         try:
-            user = User(id, name, family, username, password, role, phone)
+            user = User(name_validator(name, "invalid name"), 
+                        name_validator(family, "invalid family"),
+                        username_validator(username, "invalid username"),
+                        password_validator(password, "invalid password"),
+                        phone_number_validator(phone_number, "invalid phone number"),
+                        role
+                        )
+            print(user)
             da = UserDa()
-            da.save(user)
-            return "User saved"
-        except Exception :
-            return "Error saving"
+            result = da.save(user)
+        
+        except Exception as e:
+            e.with_traceback()
+            return e
 
 
-    def edit(self,  id, name, family, username, password, role , phone ):
-        try:
-            user = User(id, name, family, username, password, role , phone)
-            da = UserDa()
-            da.save(user)
-            return "User edit"
-        except Exception :
-            return "Error saving"
-
-
-    def remove(self, id):
+    def edit(self, id , name, family, username, password, phone , status=True ):
         try:
             da = UserDa()
-            da.remove(id)
-            return "person has been removed"
+            user = da.edit_by_user(user,id)
+            if user:
+                user.name = name_validator(name, "invalid name")
+                user.family = family_validator(family, "invalid family")
+                user.username = username_validator(username, "invalid username")
+                user.password = password_validator(password, "invalid password")
+                user.phone_number = phone_number_validator(phone_number, "invalid phone number")
+                da.edit(user)
+                return f"{user.name} {user.family} edit successful"
+        except Exception e:
+            return e
 
-        except Exception :
-            return "Error while"
 
-    def find_all(self):
+    def remove_user_by_id(self, id):
         try:
             da = UserDa()
-            da.find_all(id)
-            return "person found"
+            result = da.remove_user_by_id(user,id)
+            if result:
+                return f"person has been removed by id{id}"
 
-        except Exception :
-            return "Error finding"
+        except Exception as e:
+            return e
+
+    def find_by_id(self, id):
+        try:
+            da = UserDa()
+            result = da.find_by_id(user, id )
+            if result:
+                return f"person found by id {id}"
+
+        except Exception as e:
+            return e
 
 
     def find_by_username(self, username):
         try:
            da = UserDa()
-           da.find_by_username(username)
-           return "person found by username"
+           result = da.find_by_username(user , username)
+           if result:
+               return f"person found by username {username}"
 
-        except Exception :
-            return "Error while"
+        except Exception as e :
+            return e
 
 
     def find_by_username_and_password(self, username, password):
         try:
             da = UserDa()
-            da.find_by_username_and_password(username, password)
-            return "person found by username and password"
+            result = da.find_by_username_and_password(username, password)
+            if result:
+                return f"person found by username and password {username}"
 
-        except Exception :
-            return "Error while"
+        except Exception as e :
+            return e
 
-    def find_by_phone(self, phone):
+    def find_by_name_and_family(self, name, family):
         try:
             da = UserDa()
-            da.find_by_phone(phone)
-            return "person found by username"
+            result = da.find_by_name_and_family(name, family)
+            if result:
+                return f"person found by name and family {name , family}"
 
-        except Exception :
-            return "Error while"
+        except Exception as e :
+            return e
+   
 
 
