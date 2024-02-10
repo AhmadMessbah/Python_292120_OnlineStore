@@ -1,6 +1,6 @@
 from model.da.user_da import UserDa
 from model.entity.user import User
-from validators.validator import name_validator , family_validator , phome_validator , username_validator , password_validato
+from validators.validator import name_validator , family_validator , phone_validator , username_validator , password_validato
 
 
 class UserController:
@@ -66,6 +66,7 @@ class UserController:
 
     def find_by_username(self, username):
         try:
+           if username_validator(username, "invalid username"):
            da = UserDa()
            result = da.find_by_username(user , username)
            if result:
@@ -75,10 +76,26 @@ class UserController:
             return e
 
 
+   def find_by_phone(self, phone):
+        try:
+           if phonee_validator(phone, "invalid phone"):
+           da = UserDa()
+           result = da.find_by_phone(user , phone)
+           if result:
+               return f"person found by phone {phone}"
+
+        except Exception as e :
+            return e
+
+
+
+
     def find_by_username_and_password(self, username, password):
         try:
+            if username_validator(username, "invalid username")and
+               password_validator(password, "invalid password"):
             da = UserDa()
-            result = da.find_by_username_and_password(username, password)
+            result = da.find_by_username_and_password(username, password) ,
             if result:
                 return f"person found by username and password {username}"
 
@@ -87,10 +104,12 @@ class UserController:
 
     def find_by_name_and_family(self, name, family):
         try:
+            if name_validator(name, "invalid name") and
+               family_validator(family, "invalid family"):
             da = UserDa()
             result = da.find_by_name_and_family(name, family)
             if result:
-                return f"person found by name and family {name }{ family}"
+                return f"person found by name and family { name }{ family }"
 
         except Exception as e :
             return e
