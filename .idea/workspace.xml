@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="df315236-a6b0-4d49-8d2b-dc56148002e0" name="Changes" comment=" update - Negin Saatsaz" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Alivic202&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="664cf394-5d8f-4a00-ad5c-a572c57dd602" />
+        <option name="url" value="https://github.com/AhmadMessbah/Python_292120_OnlineStore" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2bUVJtewJ0dQRsBXOih6Q7JGaQj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.123.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.stuff.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.view.executor&quot;: &quot;Run&quot;,
+    &quot;Python.view_payment.executor&quot;: &quot;Run&quot;,
+    &quot;Python.view_project.executor&quot;: &quot;Run&quot;,
+    &quot;Python.view_storage.executor&quot;: &quot;Run&quot;,
+    &quot;Python.view_stuff.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/AsusIran/Desktop/Python_292120_OnlineStore-master/view&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Student\Desktop\Python_292120_OnlineStore" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\AsusIran\Desktop\Python_292120_OnlineStore-master\view" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="df315236-a6b0-4d49-8d2b-dc56148002e0" name="Changes" comment="" />
+      <created>1706269575233</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706269575233</updated>
+      <workItem from="1706269576370" duration="2000" />
+      <workItem from="1706873118086" duration="5029000" />
+      <workItem from="1706989359355" duration="532000" />
+      <workItem from="1707069113334" duration="4269000" />
+      <workItem from="1707119689421" duration="26000" />
+      <workItem from="1707144565310" duration="1196000" />
+      <workItem from="1707150208369" duration="5609000" />
+      <workItem from="1707392085560" duration="2188000" />
+      <workItem from="1707420998121" duration="784000" />
+      <workItem from="1707476938632" duration="7927000" />
+      <workItem from="1707586364871" duration="389000" />
+      <workItem from="1707587471431" duration="5832000" />
+      <workItem from="1707649965513" duration="9000" />
+    </task>
+    <task id="LOCAL-00001" summary=" update - alireza chahardaghi">
+      <option name="closed" value="true" />
+      <created>1706281927881</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706281927881</updated>
+    </task>
+    <task id="LOCAL-00002" summary=" update - alireza chahardaghi">
+      <option name="closed" value="true" />
+      <created>1706282197328</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706282197328</updated>
+    </task>
+    <task id="LOCAL-00003" summary=" update - alireza chahardaghi">
+      <option name="closed" value="true" />
+      <created>1706283274108</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706283274108</updated>
+    </task>
+    <task id="LOCAL-00004" summary=" update - Negin Saatsaz">
+      <option name="closed" value="true" />
+      <created>1706989450899</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706989450899</updated>
+    </task>
+    <task id="LOCAL-00005" summary=" update - Negin Saatsaz">
+      <option name="closed" value="true" />
+      <created>1706989683454</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706989683454</updated>
+    </task>
+    <task id="LOCAL-00006" summary=" update - Negin Saatsaz">
+      <option name="closed" value="true" />
+      <created>1706989791732</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706989791732</updated>
+    </task>
+    <task id="LOCAL-00007" summary=" update - Negin Saatsaz">
+      <option name="closed" value="true" />
+      <created>1707070385771</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707070385771</updated>
+    </task>
+    <task id="LOCAL-00008" summary=" update - Negin Saatsaz">
+      <option name="closed" value="true" />
+      <created>1707070489858</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707070489858</updated>
+    </task>
+    <task id="LOCAL-00009" summary=" update - Negin Saatsaz">
+      <option name="closed" value="true" />
+      <created>1707072162849</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1707072162849</updated>
+    </task>
+    <task id="LOCAL-00010" summary=" update - Negin Saatsaz">
+      <option name="closed" value="true" />
+      <created>1707072211926</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1707072211926</updated>
+    </task>
+    <task id="LOCAL-00011" summary=" update - Negin Saatsaz">
+      <option name="closed" value="true" />
+      <created>1707072578269</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1707072578269</updated>
+    </task>
+    <task id="LOCAL-00012" summary=" update - Negin Saatsaz">
+      <option name="closed" value="true" />
+      <created>1707072984278</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1707072984278</updated>
+    </task>
+    <task id="LOCAL-00013" summary=" update - Negin Saatsaz">
+      <option name="closed" value="true" />
+      <created>1707073325608</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1707073325608</updated>
+    </task>
+    <task id="LOCAL-00014" summary=" update - Negin Saatsaz">
+      <option name="closed" value="true" />
+      <created>1707145759514</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1707145759514</updated>
+    </task>
+    <task id="LOCAL-00015" summary=" update - Negin Saatsaz">
+      <option name="closed" value="true" />
+      <created>1707155876689</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1707155876689</updated>
+    </task>
+    <task id="LOCAL-00016" summary=" update - Ashkan Roshani">
+      <option name="closed" value="true" />
+      <created>1707392826472</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1707392826472</updated>
+    </task>
+    <task id="LOCAL-00017" summary=" update - Ashkan Roshani">
+      <option name="closed" value="true" />
+      <created>1707394138192</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1707394138192</updated>
+    </task>
+    <task id="LOCAL-00018" summary=" update - Ashkan Roshani">
+      <option name="closed" value="true" />
+      <created>1707421062287</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1707421062287</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="transaction update - alireza chahardaghi" />
+    <MESSAGE value=" update - alireza chahardaghi" />
+    <MESSAGE value=" update - Negin Saatsaz" />
+    <MESSAGE value=" update - Ashkan Roshani" />
+    <option name="LAST_COMMIT_MESSAGE" value=" update - Ashkan Roshani" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/controller/storage_controller.py</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/model/da/transaction_da.py</url>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Python_292120_OnlineStore_master$123.coverage" NAME="123 Coverage Results" MODIFIED="1707591621348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/" />
+    <SUITE FILE_PATH="coverage/Python_292120_OnlineStore_master$view.coverage" NAME="view Coverage Results" MODIFIED="1707589985685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/" />
+    <SUITE FILE_PATH="coverage/Python_292120_OnlineStore_master$view_project.coverage" NAME="view_project Coverage Results" MODIFIED="1707589945535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/" />
+    <SUITE FILE_PATH="coverage/Python_292120_OnlineStore$test.coverage" NAME="test Coverage Results" MODIFIED="1707073382681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/Python_292120_OnlineStore_master$stuff.coverage" NAME="stuff Coverage Results" MODIFIED="1707589728653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view" />
+    <SUITE FILE_PATH="coverage/Python_292120_OnlineStore$app.coverage" NAME="app Coverage Results" MODIFIED="1707477443907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view" />
+    <SUITE FILE_PATH="coverage/Python_292120_OnlineStore_master$view_storage.coverage" NAME="view_storage Coverage Results" MODIFIED="1707593178386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view" />
+    <SUITE FILE_PATH="coverage/Python_292120_OnlineStore_master$view_stuff.coverage" NAME="view_stuff Coverage Results" MODIFIED="1707592777622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view" />
+    <SUITE FILE_PATH="coverage/Python_292120_OnlineStore$view_stuff.coverage" NAME="view_stuff Coverage Results" MODIFIED="1707495084121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view" />
+    <SUITE FILE_PATH="coverage/Python_292120_OnlineStore_master$view_payment.coverage" NAME="view_payment Coverage Results" MODIFIED="1707592727594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/view" />
+  </component>
+</project>
